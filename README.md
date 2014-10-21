@@ -11,6 +11,7 @@ provides functions for downloading the images and creating the Emoticons.plist
 XML file required by Adium.
 
 Then:
+
 1. Put the images and the .plist file into a directory called BLAH.AdiumEmoticonset
 2. zip -r blah.zip BLAH.AdiumEmoticonset/
 3. In finder, double-click on the zip file. Adium will then install the
