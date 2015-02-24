@@ -33,6 +33,12 @@ def usermatch(userjson, regex):
             userlist.append({'name': user['name'], 'mention_name': user['mention_name']})
     return userlist
 
+def fetchrooms(token):
+    """
+    Fetch list of rooms
+    """
+    roomurl = "https://api.hipchat.com/v2/room?max-results=1000"
+    return dorequest(roomurl, token)
 
 def getusermatches(token, regex=None):
     """
